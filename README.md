@@ -29,3 +29,4 @@ python q7_cnn_error_analysis.py
 ```
 
 `q5` and `q7` open plot windows. If you run in a terminal with no display, set:
+# DATA221_Assignment4
