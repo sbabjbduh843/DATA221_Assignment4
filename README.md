@@ -1,4 +1,4 @@
-# data 221 — assignment 4 - by sabir sherefa
+# data 221 — assignment 4 (sabir sherefa)
 
 ## files
 
@@ -14,7 +14,7 @@
 
 ## how to run
 
-Use the same python that has `tensorflow` and `scikit-learn` installed (for example your course venv).
+Use a python that has `tensorflow` and `scikit-learn` (your course venv).
 
 From this folder:
 
@@ -28,5 +28,14 @@ python q6_cnn_fashion_mnist.py
 python q7_cnn_error_analysis.py
 ```
 
-`q5` and `q7` open plot windows. If you run in a terminal with no display, set:
-# DATA221_Assignment4
+`q5` and `q7` open plot windows (two confusion matrices in q5; one confusion matrix plus three wrong-image figures in q7). If there is no display, run:
+
+```bash
+export MPLBACKEND=Agg
+```
+
+then run those scripts (plots still get created; you may see a harmless warning about non-interactive figures).
+
+## note on numbers
+
+Exact accuracy can move a little with library versions and random seeds. Your code should still show sensible train/test gaps and cnn test accuracy usually lands near the high 0.8x–0.9x range on fashion mnist with this small network.

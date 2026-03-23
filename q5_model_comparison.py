@@ -20,7 +20,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # constrained decision tree (limits depth so it does not overfit as much)
-tree_model = DecisionTreeClassifier(max_depth=3)
+tree_model = DecisionTreeClassifier(max_depth=3, random_state=42)
 tree_model.fit(X_train, y_train)
 tree_preds = tree_model.predict(X_test)
 tree_test_acc = accuracy_score(y_test, tree_preds)
